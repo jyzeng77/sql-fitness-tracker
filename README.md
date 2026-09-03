@@ -4,6 +4,10 @@ A hands-on course: you learn PostgreSQL by actually building a todo app — firs
 typing SQL directly into `psql` (Postgres's interactive terminal), then by wiring the
 same queries into Python.
 
+> 🛠️ **New to this project, or want to know how the environment was built?**
+> Read [`SETUP.md`](SETUP.md) — the full step-by-step runbook, reusable for any
+> future project.
+
 **Your setup**
 
 | Piece        | What it is                                   | Status |

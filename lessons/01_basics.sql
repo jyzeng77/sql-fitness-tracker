@@ -34,6 +34,16 @@ CREATE TABLE IF NOT EXISTS tasks (
 -- INSPECT what you made (these are psql meta-commands, not SQL):
 --   \d tasks
 
+-- ------------------------------------------------------------
+-- FRESH START — every run of this file begins from an empty
+-- table (all rows wiped, ids restart at 1), so the lesson
+-- builds up the same way each time. The TRUNCATE sits right
+-- after CREATE TABLE on purpose: the table must exist first,
+-- which also makes the very first run work.
+-- (NOTE TO SELF: to clear a table and reset its id counter
+--  while keeping its shape, this is the command:)
+TRUNCATE tasks RESTART IDENTITY;
+
 -- My notes:
 -- INTEGER - data type
 -- GENERATED ALWAYS AS IDENTITY - who supplies the value - in this case
@@ -130,11 +140,6 @@ DELETE FROM tasks WHERE title = 'Finish Exercise 1';
 -- better: predict, DON'T run it, and tell me your answer.
     -- I think it will set all the entire column of done to value TRUE
     -- You've mentioned that not using WHERE results in selecting entire db
-
-
--- NOTE TO SELF:
--- to clear a table and reset its id counter but keep its shape:
-TRUNCATE tasks RESTART IDENTITY;
 
 
 -- ------------------------------------------------------------

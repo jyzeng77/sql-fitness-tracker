@@ -128,6 +128,8 @@ DELETE FROM tasks WHERE title = 'Finish Exercise 1';
 -- What happens if you run `UPDATE tasks SET done = TRUE;` — no WHERE?
 -- Predict first, then try it on the row you don't care about... or
 -- better: predict, DON'T run it, and tell me your answer.
+    -- I think it will set all the entire column of done to value TRUE
+    -- You've mentioned that not using WHERE results in selecting entire db
 
 -- ------------------------------------------------------------
 -- UNDER THE HOOD

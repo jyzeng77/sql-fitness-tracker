@@ -5,3 +5,6 @@ __pycache__/
 
 # OS / editor
 .DS_Store
+
+# Freebuff app scratch data
+.freebuff/

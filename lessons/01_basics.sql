@@ -112,6 +112,7 @@ INSERT INTO tasks (title) VALUES
     ('Finish Exercise 3');
 
 -- EXERCISE 2: SELECT only the titles of tasks that are not done.
+SELECT title FROM tasks WHERE done = FALSE;
 
 -- EXERCISE 3: Mark one of YOUR tasks as done using its id.
 

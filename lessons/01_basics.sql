@@ -122,6 +122,7 @@ SELECT title FROM tasks WHERE NOT done;
 UPDATE tasks SET done = TRUE WHERE id = 8;
 
 -- EXERCISE 4: Delete one of your tasks.
+DELETE FROM tasks WHERE title = 'Finish Exercise 1';
 
 -- EXERCISE 5 (thought experiment, answer in a comment):
 -- What happens if you run `UPDATE tasks SET done = TRUE;` — no WHERE?

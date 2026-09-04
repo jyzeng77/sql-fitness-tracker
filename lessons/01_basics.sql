@@ -113,6 +113,10 @@ INSERT INTO tasks (title) VALUES
 
 -- EXERCISE 2: SELECT only the titles of tasks that are not done.
 SELECT title FROM tasks WHERE done = FALSE;
+-- alternatively you can write: 
+SELECT title FROM tasks WHERE NOT done;
+-- however be wary of the fact that NULL != T/F but in our case, 
+-- since NULL is not an allowed value in setup, we are safe
 
 -- EXERCISE 3: Mark one of YOUR tasks as done using its id.
 

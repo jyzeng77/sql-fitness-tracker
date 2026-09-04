@@ -34,6 +34,14 @@ CREATE TABLE IF NOT EXISTS tasks (
 -- INSPECT what you made (these are psql meta-commands, not SQL):
 --   \d tasks
 
+-- My notes:
+-- INTEGER - data type
+-- GENERATED ALWAYS AS IDENTITY - who supplies the value - in this case
+--      the database. the user cannot define the value at all and would
+--      result in error. 
+-- use DEFAULT instead if you want to have default but changeable values.
+-- PRIMARY KEY - type is constraint / rule
+
 -- ------------------------------------------------------------
 -- 2. INSERT — add rows
 -- ------------------------------------------------------------

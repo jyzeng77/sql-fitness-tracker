@@ -119,6 +119,7 @@ SELECT title FROM tasks WHERE NOT done;
 -- since NULL is not an allowed value in setup, we are safe
 
 -- EXERCISE 3: Mark one of YOUR tasks as done using its id.
+UPDATE tasks SET done = TRUE WHERE id = 8;
 
 -- EXERCISE 4: Delete one of your tasks.
 

@@ -105,6 +105,12 @@ SELECT * FROM tasks;
 
 -- EXERCISE 1: Insert three tasks of your own (just titles).
 
+-- use single quotes always for strings
+INSERT INTO tasks (title) VALUES ('Finish Exercise 1');
+INSERT INTO tasks (title) VALUES 
+    ('Finish Exercise 2'),
+    ('Finish Exercise 3');
+
 -- EXERCISE 2: SELECT only the titles of tasks that are not done.
 
 -- EXERCISE 3: Mark one of YOUR tasks as done using its id.

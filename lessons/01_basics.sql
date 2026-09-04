@@ -105,7 +105,7 @@ SELECT * FROM tasks;
 
 -- EXERCISE 1: Insert three tasks of your own (just titles).
 
--- use single quotes always for strings
+-- single quotes = strings, double quotes = identifiers
 INSERT INTO tasks (title) VALUES ('Finish Exercise 1');
 INSERT INTO tasks (title) VALUES 
     ('Finish Exercise 2'),

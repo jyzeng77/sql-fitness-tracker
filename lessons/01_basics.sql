@@ -131,6 +131,12 @@ DELETE FROM tasks WHERE title = 'Finish Exercise 1';
     -- I think it will set all the entire column of done to value TRUE
     -- You've mentioned that not using WHERE results in selecting entire db
 
+
+-- NOTE TO SELF:
+-- to clear a table and reset its id counter but keep its shape:
+TRUNCATE tasks RESTART IDENTITY;
+
+
 -- ------------------------------------------------------------
 -- UNDER THE HOOD
 -- ------------------------------------------------------------
